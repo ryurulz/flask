@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: ryurulzflask 
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: ryurulzflask
