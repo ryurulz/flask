@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: ryurulzflask 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ryurulzflask
+  template:
+    metadata:
+      labels:
+        app: ryurulzflask 
+    spec:
+      containers:
+        - name: ryurulzflask 
+          image: riyad369.azurecr.io/ryurulzflask
+          ports:
+          - containerPort: 5000
